@@ -7,19 +7,25 @@
       <h1 class="u-align-center u-text u-text-body-alt-color u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500">Меню пиццерии LoLoLo</h1>
     </div>
   </div>
-  {% for pizza in pizzas %}
   <div class="u-list u-list-1">
     <div class="u-repeater u-repeater-1">
+  {% for pizza in pizzas %}
       <div class="u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle u-white u-list-item-1" data-animation-name="customAnimationIn" data-animation-duration="1500">
         <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
-          <img class="u-expanded-width u-image u-image-default u-image-2" src="{{ pizza.image }}" alt="" data-image-width="700" data-image-height="560" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+          <img class="u-expanded-width u-image u-image-default u-image-2" src= "{{ pizza.image.url }}" alt="" data-image-width="700" data-image-height="560" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
           <h4 class="u-align-center u-custom-font u-text u-text-2">{{ pizza.name }}</h4>
           <p class="u-align-center u-text u-text-3"> {{ pizza.description }} </p>
           <p class="u-align-center u-text u-text-palette-2-base u-text-4" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> ${{ pizza.price }}</p>
+          <style>
+            .cwd{text-align:center;}
+            .cwda{cursor:pointer;font-size:14px;text-decoration:none;padding:12px 29px;color:#000000;background-color:#ffffff;border-radius:5px;border:3px solid #666666;}
+            .cwda:hover{background-color:#424242;color:#ffffff;}
+            </style>
+            <p class="cwd"><a href="/buy/{{ pizza.id }}" class="cwda">Заказать</a></p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 {% endfor %}
 {% endblock %}
+</div>
+</div>
+</section>

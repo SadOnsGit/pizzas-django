@@ -1,1 +1,12 @@
-[{"model": "index_page.pizzas", "pk": 4, "fields": {"name": "Обычная", "description": "Дешево и вкусно", "image": "media/pizzas_images/09.jpg", "price": "123.00"}}]
+[
+    {
+        "model": "index_page.pizzas",
+        "pk": 4,
+        "fields": {
+            "name": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+            "description": "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ",
+            "image": "media/pizzas_images/09.jpg",
+            "price": "123.00"
+        }
+    }
+]
