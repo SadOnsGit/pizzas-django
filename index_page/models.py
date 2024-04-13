@@ -1,5 +1,4 @@
 from django.db import models
-from main import settings
 
 
 class Pizzas(models.Model):
