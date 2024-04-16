@@ -21,7 +21,8 @@ from main import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('index_page.urls', namespace='index'))
+    path('', include('index_page.urls', namespace='index')),
+    path('user/', include('users.urls', namespace='user')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:

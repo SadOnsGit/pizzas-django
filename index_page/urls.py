@@ -5,5 +5,5 @@ app_name = 'main'
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('basket/<int:pizza_id>', views.pizza, name='pizza')
+    # path('basket/<int:pizza_id>', views.pizza, name='pizza')
 ]

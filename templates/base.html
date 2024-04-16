@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="keywords" content="Italy Pizza Menu">
   <meta name="description" content="">
-  <title>Главная</title>
+  <title>{{ title }}</title>
   <link rel="stylesheet" href="{% static "nicepage.css" %}" media="screen">
   <link rel="stylesheet" href="{% static "Главная.css" %}" media="screen">
   <script class="u-script" type="text/javascript" src="{% static "jquery.js" %}" defer=""></script>
@@ -37,9 +37,10 @@
             </a>
           </div>
           <div class="u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Главная.html" style="padding: 10px 20px;">Главная</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'main:index' %}" style="padding: 10px 20px;">Главная</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="О-нас.html" style="padding: 10px 20px;">О нас</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Контакты.html" style="padding: 10px 20px;">Контакты</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'users:login' %}" style="padding: 10px 20px;">Авторизация</a>
   <li class="u-nav-item">
     <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Корзина.html" style="padding: 10px 20px;">
         <img src="{% static 'images/basket.png' %}" alt="Корзина" style="width: 30px; height: 30px;">
@@ -51,7 +52,7 @@
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Главная.html">Главная</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'main:index' %}">Главная</a>
                 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" src="О-нас.html">О нас</a>
                 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" src="Контакты.html">Контакты</a>
                 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" src="Корзина.html">Корзина</a>

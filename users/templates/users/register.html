@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<head>
+  <link rel="stylesheet" href="{% static "users/style.css" %}" />
+</head>
+  <div class="center">
+    <h1>Registration</h1>
+    <form method="post">
+      <div class="txt_field">
+        <input type="text" required />
+        <span></span>
+        <label>Username</label>
+      </div>
+      <div class="txt_field">
+        <input type="password" required />
+        <span></span>
+        <label>Password</label>
+      </div>
+      <div class="txt_field">
+        <input type="password" required />
+        <span></span>
+        <label>Repeat password</label>
+      </div>
+      <input type="submit" value="Login" />
+      <div class="signup_link">Already have account? <a href="{% url 'users:login' %}">Login</a></div>
+    </form>
+  </div>
+{% endblock %}

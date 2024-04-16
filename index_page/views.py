@@ -7,6 +7,3 @@ def index(request):
         'pizzas': pizzas,
     }
     return render(request, 'index_page/index.html', context=context)
-
-def pizza(request, pizza_id):
-    pass
